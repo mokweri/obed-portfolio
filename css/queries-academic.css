@@ -1,0 +1,94 @@
+/*************************************************
+ BELOW 944px (Tablets) 
+ *************************************************/
+@media (max-width: 59em) {
+  .academic-passport {
+    width: 20rem;
+    height: 20rem;
+  }
+  .academic-name {
+    width: 45rem;
+  }
+}
+/*************************************************
+ BELOW 704px (Smalller Tablets) 
+ *************************************************/
+@media (max-width: 44em) {
+  .academic-header {
+    height: auto;
+    padding: 5rem 0 3rem 0;
+  }
+  .academic-name {
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .academic-name h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+  }
+  .academic-name h2 {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+  /* body */
+  .academic-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 2rem; */
+    padding: 4rem 0 6rem 0;
+  }
+  .academic-left-aside {
+    grid-row: 2;
+  }
+}
+/*************************************************
+ BELOW 544px (Phones) 
+ *************************************************/
+@media (max-width: 34em) {
+  .academic-passport {
+    width: 18rem;
+    height: 18rem;
+    margin-bottom: 2rem;
+  }
+  .academic-name {
+    width: 40rem;
+  }
+  .academic-name h1 {
+    font-size: 2.2rem;
+  }
+  .academic-name h2 {
+    font-size: 1.6rem;
+  }
+
+  .credentials span,
+  .credentials time {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  .quote {
+    margin-top: 0.8rem;
+  }
+  .quote p {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  .academic-h1 {
+    font-size: 2.8rem;
+  }
+  .items {
+    font-size: 1.6rem;
+  }
+  .academic-left-aside {
+    width: 35rem;
+    justify-self: center;
+  }
+}
+/*************************************************
+ BELOW 450px (Phones) Small
+ *************************************************/
+@media (max-width: 28em) {
+}

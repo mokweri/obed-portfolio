@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* 10px/16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  /* Does not work on Safari */
+  /* scroll-behavior: smooth; */
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  /* only works if there is nothing absolutely positioned to body */
+  overflow-x: hidden;
+}
+/* *********************************************** */
+/* GENERAL RESUSABLE COMPONENTS */
+/* ************************************************ */
+.container-wide {
+  width: 100%;
+  max-width: 170rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  position: relative;
+}
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  position: relative;
+}
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  /* flex: 0 1 auto; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  position: relative;
+}
+.row-center {
+  justify-content: center;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-gap-tiny {
+  gap: 1rem;
+}
+.flex-gap-small {
+  gap: 2.4rem;
+}
+.flex-gap-medium {
+  gap: 3rem;
+}
+.flex-gap-large {
+  gap: 3.6rem;
+}
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.section-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 3.3rem;
+  color: #06205d;
+  letter-spacing: 1px;
+}
+.subsection-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.6rem;
+  color: #06205d;
+  letter-spacing: 1px;
+}
+
+.icon-link:link,
+.icon-link:visited {
+  text-decoration: none;
+  font-size: 3.3rem;
+  color: #0075db;
+  transition: all 0.3s;
+}
+.icon-link:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+.bottom-space-small {
+  margin-bottom: 2.4rem;
+}
+.bottom-space-medium {
+  margin-bottom: 3rem;
+}
+.bottom-space-large {
+  margin-bottom: 6.4rem;
+}
+.grid {
+  display: grid;
+  row-gap: 4.8rem;
+  column-gap: 4.8rem;
+}
+.grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-center-v {
+  align-items: center;
+}
+.grid-start-v {
+  align-items: start;
+}
+.text-center {
+  text-align: center;
+}
+.text-color-white {
+  color: rgba(255, 255, 255, 0.8);
+}
+.text-color-primary {
+  color: #06205d;
+}
+.text-color-secondary {
+  color: #555;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1.2rem 2.4rem;
+  border-radius: 10px;
+  text-decoration: none;
+
+  /* for the .btn */
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+.btn--full:link,
+.btn--full:visited {
+  background-color: #020d25;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #1f366d;
+}
+.btn--form {
+  background-color: #06205d;
+  padding: 1.2rem;
+  align-self: end;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #020d25;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #1f366d;
+  border-bottom: 1px solid transparent;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.slant-section {
+  /* clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%); */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
+  margin-bottom: -2vw;
+}
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem #abb8c3;
+}
+
+/*
+----- 01 Typography systems
+
+ --font-primary: 'Roboto', sans-serif;
+ --font-secondary: 'Roboto Slab', serif
+
+  --FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+  
+  --Font weights
+Default: 400
+Medium: 500
+Semi-bold:600
+Bold: 700
+
+  --Line heights
+  Default: 1
+  samll: 1.05
+ paragraph default: 1.6
+
+ --Letter spacing
+ -0.5px
+ -0.75px
+
+----- 02 COLORS
+  -Primary: 
+  -Tints: #0075db; 
+
+  -main-bg #06205d;
+  -alt-bg #f5f9fb;
+
+  -Shades:  #abb8c3;
+  -Accents:
+  -Greys #ddd; 
+ 
+  
+
+---- 05 SHADOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+----- 06 BORADER RADIUS
+DEFAULT: 9px
+Medium: 11px
+
+----- 07 WHITESPACE
+  --Spacing system (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+--- 08 Flex gaps
+ flex-gap-small 12px
+ flex-gap-medium  16px
+ flex-gap-large 24px
+*/

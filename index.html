@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+
+    <title>Obed</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#"
+        ><img class="header-logo" src="img/obed-logo.png" alt="obed-logo"
+      /></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#skills">What I do</a></li>
+          <li><a class="main-nav-link" href="#projects">Portfolio</a></li>
+          <li><a class="main-nav-link" href="#resume">Resume</a></li>
+          <li><a class="main-nav-link" href="#blog">Blog</a></li>
+          <li><a class="main-nav-link" href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <div class="floating-link">
+        <a class="academic-link" href="/academic.html" target="_parent"
+          >Academic Page</a
+        >
+      </div>
+      <section class="profile-hero slant-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-top">
+              <p class="subtitle text-color-white hero-salute">
+                EXPLORE TECHNICAL FRONTIERS WITH
+              </p>
+              <h1 class="hero-title bottom-space-small">
+                Mogaka Obed, <br />the <span>Embedded Systems</span> Engineer.
+              </h1>
+            </div>
+            <div class="hero-description">
+              <p class="profile-intro">
+                "Transforming visionary concepts into tangible human-centered
+                solutions with the power of cutting-edge technology is my
+                passion."
+              </p>
+
+              <p class="subtitle text-color-white hero-contact">FIND ME ON</p>
+              <div class="row flex-gap-small bottom-space-small hero-socials">
+                <a
+                  class="icon-link"
+                  href="https://www.linkedin.com/in/obed-mogaka-23477a6a/"
+                  target="_blank"
+                  ><ion-icon name="logo-linkedin"></ion-icon
+                ></a>
+                <a class="icon-link" href="https://github.com/mokweri"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+                <a
+                  class="icon-link"
+                  href="https://www.youtube.com/@EmbedSystems"
+                  ><ion-icon name="logo-youtube"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img class="profile-image" src="/img/obed-hero.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills-section" id="skills">
+        <div class="container">
+          <h1 class="section-title bottom-space-medium">What I do</h1>
+          <div class="grid grid-3-col grid-start-v">
+            <div class="skill-card">
+              <div class="row flex-gap-tiny grid-center-v">
+                <ion-icon
+                  class="skill-icon"
+                  name="hardware-chip-outline"
+                ></ion-icon>
+                <h3 class="skill-card-title">Embedded Systems</h3>
+              </div>
+              <ul class="skill-list">
+                <li>Firmware development (C/C++).</li>
+                <li>MCU families: Arduino, AVR, STM32, and ESP32.</li>
+                <li>MCU protocols: SPI, UART, I2C, CAN, BLE.</li>
+                <li>Sensor and actuator interfacing.</li>
+                <li>Real-Time Operating Systems: FreeRTOS.</li>
+                <li>Low power and resorce efficient design.</li>
+              </ul>
+              <div class="row tools">
+                <a class="tool-link" href="https://www.arduino.cc/"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/arduino.png"
+                    alt="arduino logo"
+                /></a>
+                <a class="tool-link" href="https://www.st.com/"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/st.png"
+                    alt="st microelectronics logo"
+                /></a>
+                <a class="tool-link" href="#"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/esp.jpg"
+                    alt="espressif log"
+                /></a>
+                <a class="tool-link" href="#"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/freertos.png"
+                    alt="freertos logo"
+                /></a>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="row flex-gap-tiny grid-center-v">
+                <ion-icon
+                  class="skill-icon"
+                  name="construct-outline"
+                ></ion-icon>
+                <h3 class="skill-card-title">Hardware</h3>
+              </div>
+              <ul class="skill-list">
+                <li>Digital & analog circuit design.</li>
+                <li>PCB design - Altium Designer</li>
+                <li>Hardware debugging, simulation and testing</li>
+                <li>
+                  Lab equipment: Multimeter, Oscilloscope, & Logic analyzers.
+                </li>
+                <li>Hands-on soldering and rework.</li>
+                <li>Debugging: SWD, JTAG, and SEGGER.</li>
+              </ul>
+              <div class="row tools">
+                <a
+                  class="tool-link"
+                  href="https://www.altium.com/altium-designer"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/altium.png"
+                    alt="Altium designer logo"
+                /></a>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="row flex-gap-tiny grid-center-v">
+                <ion-icon
+                  class="skill-icon"
+                  name="code-slash-outline"
+                ></ion-icon>
+                <h3 class="skill-card-title">Programming</h3>
+              </div>
+              <ul class="skill-list">
+                <li>Programming in C, C++, Python, and JavaScript.</li>
+                <li>Web technologies: HTML5, CSS, JS, NodeJS.</li>
+                <li>Keen on clean and efficient code.</li>
+                <li>Version control and collaboration - Git.</li>
+                <li>Documentation</li>
+              </ul>
+              <div class="row tools">
+                <a
+                  class="tool-link"
+                  href="https://en.cppreference.com/w/c/language"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/c.png"
+                    alt="C language logo"
+                /></a>
+                <a
+                  class="tool-link"
+                  href="https://en.cppreference.com/w/cpp/language"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/cpp.png"
+                    alt="C++ language logo"
+                /></a>
+                <a class="tool-link" href="https://www.python.org/"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/python.png"
+                    alt="Python language logo"
+                /></a>
+                <a
+                  class="tool-link"
+                  href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/html.png"
+                    alt="html logo"
+                /></a>
+                <a
+                  class="tool-link"
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/css.png"
+                    alt="css logo"
+                /></a>
+                <a
+                  class="tool-link"
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/js.png"
+                    alt="JavaScript logo"
+                /></a>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="row flex-gap-tiny grid-center-v">
+                <ion-icon class="skill-icon" name="watch-outline"></ion-icon>
+                <h3 class="skill-card-title">Embedded ML</h3>
+              </div>
+              <ul class="skill-list">
+                <li>Machine Learning and Deep Neural Networks.</li>
+                <li>Frameworks: TensorFlow-Keras, PyTorch.</li>
+                <li>CNN pruning and quantization.</li>
+                <li>TensorFlowLite, TensorRT, & Edge Impulse.</li>
+                <li>Raspberry Pi, Jetson SBCs, & ESP32.</li>
+              </ul>
+              <div class="row tools">
+                <a class="tool-link" href="https://www.tensorflow.org/lite"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/tflite.png"
+                    alt="Tensorflow lite logo"
+                /></a>
+                <a
+                  class="tool-link"
+                  href="https://developer.nvidia.com/embedded-computing"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/jetson.png"
+                    alt="Nvidia jetson logo"
+                /></a>
+                <a class="tool-link" href="https://www.raspberrypi.org/"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/raspberry.png"
+                    alt="Raspberry pi logo"
+                /></a>
+                <a class="tool-link" href="https://edgeimpulse.com/"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/edge-impulse.png"
+                    alt="Edge impulse logo"
+                /></a>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="row flex-gap-tiny grid-center-v">
+                <ion-icon
+                  class="skill-icon"
+                  name="hardware-chip-outline"
+                ></ion-icon>
+                <h3 class="skill-card-title">FPGA Design</h3>
+              </div>
+              <ul class="skill-list">
+                <li>Hardware Description Languages: Verilog.</li>
+                <li>
+                  High-Level Synthesis (HLS) and OpenCL for FPGA acceleration.
+                </li>
+                <li>FPGAs tools: Vivado, Vitis-HLS, Vitis IDE.</li>
+                <li>
+                  Hardware-software co-design - Algorithm and AI acceleration on
+                  FPGA
+                </li>
+              </ul>
+              <div class="row tools">
+                <a class="tool-link" href="#"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/xilinx.png"
+                    alt="Xilinx logo"
+                /></a>
+                <a
+                  class="tool-link"
+                  href="https://www.xilinx.com/products/boards-and-kits.html"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/zynq.png"
+                    alt="Zynq logo"
+                /></a>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="row flex-gap-tiny grid-center-v">
+                <ion-icon class="skill-icon" name="rocket-outline"></ion-icon>
+                <h3 class="skill-card-title">Product Development</h3>
+              </div>
+              <ul class="skill-list">
+                <li>Offers online or personalized training.</li>
+                <li>
+                  Multiple domains: IoT, DSP, computer vision, agriculture, home
+                  or industrial automation, & consumer products.
+                </li>
+                <li>Rapid prototyping for proof-of-concept.</li>
+                <li>Committed to continuous innovation and research.</li>
+              </ul>
+              <div class="row tools">
+                <a class="tool-link" href="https://github.com/mokweri"
+                  ><img
+                    class="tool-logo"
+                    src="img/skills/git.png"
+                    alt="Github logo"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="resume-section" id="resume">
+        <div class="container">
+          <h1 class="section-title bottom-space-medium text-center">Résumé</h1>
+          <div class="grid grid-2-col">
+            <div class="subsection">
+              <p class="subtitle text-color-primary">Experience</p>
+              <div class="resume-list">
+                <div class="resume-single-list">
+                  <div class="resume-inner">
+                    <div class="resume-inner-header">
+                      <h2 class="resume-inner-title">
+                        Electronics/Electrical Engineer-Space Systems
+                      </h2>
+                      <p class="resume-inner-institutuion">
+                        Sayarilabs, Nairobi, Kenya
+                      </p>
+                      <p class="resume-inner-date">Nov 2020 &dash; Jan 2022</p>
+                    </div>
+                    <ul class="resume-inner-list">
+                      <li>
+                        Spearheaded the development of advanced satellite
+                        systems, including the Sayarilabs Payload Processor.
+                      </li>
+                      <li>
+                        Procured, qualified, and optimized Commercial
+                        Off-The-Shelf (COTS) electronics for space missions.
+                      </li>
+                      <li>
+                        Directed meticulous electrical testing campaigns to
+                        ensure the reliability and functionality of critical
+                        systems.
+                      </li>
+                    </ul>
+                    <ul class="row flex-gap-tiny resume-inner-highlights">
+                      <li>Space Systems</li>
+                      <li>Electronics</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="resume-single-list">
+                  <div class="resume-inner">
+                    <div class="resume-inner-header">
+                      <h2 class="resume-inner-title">
+                        Junior Embedded Hardware Engineer
+                      </h2>
+                      <p class="resume-inner-institutuion">
+                        8teq Solutions LTD, Nairobi, Kenya
+                      </p>
+                      <p class="resume-inner-date">Sep 2019 &dash; Oct 2020</p>
+                    </div>
+                    <ul class="resume-inner-list">
+                      <li>
+                        Led the design and implementation of innovative embedded
+                        device systems.
+                      </li>
+                      <li>
+                        Played a pivotal role in analyzing and enhancing the
+                        efficiency, stability, and scalability of embedded IoT
+                        systems.
+                      </li>
+                      <li>
+                        Demonstrated expertise in hardware design, debugging,
+                        and test automation for optimal results.
+                      </li>
+                    </ul>
+                    <ul class="row flex-gap-tiny resume-inner-highlights">
+                      <li>Embedded Systems</li>
+                      <li>IoT</li>
+                      <li>Research</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="subsection">
+              <p class="subtitle text-color-primary">Education</p>
+              <div class="resume-list">
+                <div class="resume-single-list">
+                  <div class="resume-inner">
+                    <div class="resume-inner-header">
+                      <h2 class="resume-inner-title">
+                        MSc. Electronics and Communication Engineering
+                      </h2>
+                      <p class="resume-inner-institutuion">
+                        Egypy-Japan University of Science and Technology
+                        (E-JUST)
+                      </p>
+                      <p>Alexandria, 21934 , Egypt.</p>
+                      <p class="resume-inner-date">March 2022 &dash; Present</p>
+                    </div>
+                    <ul class="resume-inner-list">
+                      <li>
+                        <strong>Research Thesis:</strong> An FPGA-Based Deep
+                        Learning Accelerator for Remote Sensing Applications.
+                      </li>
+                      <li>
+                        <strong>Research Interests:</strong> FPGA Design,
+                        Embedded Machine Learning, Deep Learning, Image
+                        Processing and Computer Vision
+                      </li>
+                    </ul>
+                    <ul class="row flex-gap-tiny resume-inner-highlights">
+                      <li>Research</li>
+                      <li>MSc</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="resume-single-list">
+                  <div class="resume-inner">
+                    <div class="resume-inner-header">
+                      <h2 class="resume-inner-title">
+                        BSc. Electrical and Electronic Engineering
+                      </h2>
+                      <p class="resume-inner-institutuion">
+                        Jomo Kenyatta University of Agriculture and Technology
+                        (JKUAT)
+                      </p>
+                      <p>Nairobi, 62000, Kenya.</p>
+                      <p class="resume-inner-date">
+                        Sept 2014 &dash; Sept 2019
+                      </p>
+                    </div>
+                    <ul class="resume-inner-list">
+                      <li>
+                        <strong>Graduation Project:</strong> A Moderm
+                        Microcontroller Training Kit for JKUAT Microprocessor
+                        labs.
+                      </li>
+                    </ul>
+                    <ul class="row flex-gap-tiny resume-inner-highlights">
+                      <li>Second Class, Upper Division</li>
+                      <li>Power</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row cv">
+            <a class="link" href="#">Download Detailed CV →</a>
+          </div>
+        </div>
+      </section>
+      <section class="projects-section" id="projects">
+        <div class="container-wide">
+          <div class="projects-grid">
+            <div class="featured-intro">
+              <h1 class="subsection-title bottom-space-medium">
+                Featured Projects
+              </h1>
+              <p>
+                I'm thrilled to showcase a selection of my personal projects...
+              </p>
+
+              <div class="row">
+                <a class="link" href="https://github.com/mokweri"
+                  >View more projects→</a
+                >
+              </div>
+            </div>
+            <div class="grid grid-2-col col-gap-s projects">
+              <div class="project-card">
+                <div class="project-overlay"></div>
+
+                <div class="project-card-col">
+                  <img class="project-img" src="img/projects/tk2560.jpg" />
+
+                  <p class="project-heading text-center">TK2560</p>
+
+                  <ul class="project-details-list">
+                    <li class="list-item">
+                      <ion-icon
+                        class="list-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>Based on Atmega2560 MCU.</span>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon
+                        class="list-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>PCB Design- Altium Designer.</span>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon
+                        class="list-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span> Firmware - Embedded C. </span>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon
+                        class="list-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>Fabrication and assembly.</span>
+                    </li>
+                  </ul>
+
+                  <div
+                    class="row flex-gap-small project-links bottom-space-small"
+                  >
+                    <a
+                      class="icon-link"
+                      href="https://github.com/mokweri/2560_TrainingKit"
+                      ><ion-icon name="logo-github"></ion-icon
+                    ></a>
+                    <a
+                      class="icon-link"
+                      href="https://www.youtube.com/watch?v=elDvMJ2Rfbs"
+                      ><ion-icon name="logo-youtube"></ion-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-overlay"></div>
+
+                <div class="project-card-col">
+                  <img class="project-img" src="img/projects/tinySpeech.JPG" />
+
+                  <p class="project-heading text-center">Embedded ML</p>
+
+                  <ul class="project-details-list">
+                    <li class="list-item">
+                      <ion-icon
+                        class="list-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>Edge Speech Recognition.</span>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon
+                        class="list-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>Using Arduino Nano RP2040.</span>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon
+                        class="list-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>Edge Impulse platform </span>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon
+                        class="list-icon"
+                        name="checkmark-outline"
+                      ></ion-icon>
+                      <span>Efficient Machine Learning at the edge.</span>
+                    </li>
+                  </ul>
+
+                  <div
+                    class="row flex-gap-small project-links bottom-space-small"
+                  >
+                    <a class="icon-link" href="#"
+                      ><ion-icon name="logo-github"></ion-icon
+                    ></a>
+                    <a
+                      class="icon-link"
+                      href="https://www.youtube.com/watch?v=myuRFESEWDQ&t=125s"
+                      ><ion-icon name="logo-youtube"></ion-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery">
+              <div class="gallery-grid">
+                <figure class="gallery-item">
+                  <img src="img/gallery/pic1.jpg" alt="My photo at the lab" />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery/pic2.jpg"
+                    alt="A photo of me in collaboration with my colleges on a project"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery/pic3.jpg"
+                    alt="A photo of jetson board"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery/pic4.jpg"
+                    alt="A photo of me with a raspberry pi board with a pcb background"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery/pic5.jpg"
+                    alt="A photo of me in the office coding"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="img/gallery/pic6.jpg"
+                    alt="A photo of me coding out in the open"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog-section" id="blog">
+        <div class="container">
+          <div class="blog-grid">
+            <div class="featured-intro">
+              <h1 class="subsection-title bottom-space-medium">
+                Discover My Insights
+              </h1>
+              <p>
+                Explore my YouTube videos and blog posts for a wealth of
+                knowledge and inspiration in the world of embedded systems and
+                technology.
+              </p>
+            </div>
+            <div class="col flex-gap-small">
+              <div class="col flex-gap-tiny blog-preview">
+                <a class="blog-title" href="#">
+                  <h2>
+                    Artificial Intelligence, Machine Learning, Deep Learning.
+                    What's the difference?
+                  </h2>
+                </a>
+                <div class="row flex-gap-tiny grid-center-v">
+                  <p class="highlights">AI</p>
+                  <p class="highlights">Technology</p>
+
+                  <div class="row grid-center-v">
+                    <ion-icon
+                      class="time-icom"
+                      name="stopwatch-outline"
+                    ></ion-icon>
+                    <p>10-minute video</p>
+                  </div>
+                  <p class="blog-date">5 Jan 2020</p>
+                </div>
+              </div>
+              <div class="col flex-gap-tiny blog-preview">
+                <a class="blog-title" href="#">
+                  <h2>
+                    Fruit Classification in Arduino Using the KNN Algorithm.
+                  </h2>
+                </a>
+                <div class="row flex-gap-tiny grid-center-v">
+                  <p class="highlights">Embedded ML</p>
+                  <p class="highlights">Arduino</p>
+
+                  <div class="row grid-center-v">
+                    <ion-icon
+                      class="time-icom"
+                      name="stopwatch-outline"
+                    ></ion-icon>
+                    <p>6-minute video</p>
+                  </div>
+                  <p class="blog-date">3 Feb 2023</p>
+                </div>
+              </div>
+              <div class="col flex-gap-tiny blog-preview">
+                <a class="blog-title" href="#">
+                  <h2>Arduino Lab for MicroPython</h2>
+                </a>
+                <div class="row flex-gap-tiny grid-center-v">
+                  <p class="highlights">MicroPython</p>
+                  <p class="highlights">Arduino</p>
+
+                  <div class="row grid-center-v">
+                    <ion-icon
+                      class="time-icom"
+                      name="stopwatch-outline"
+                    ></ion-icon>
+                    <p>5-minute video</p>
+                  </div>
+                  <p class="blog-date">11 Months ago</p>
+                </div>
+              </div>
+              <div class="col flex-gap-tiny blog-preview">
+                <a class="blog-title" href="#">
+                  <h2>Introduction to Arduino</h2>
+                </a>
+                <div class="row flex-gap-tiny grid-center-v">
+                  <p class="highlights">Electronics</p>
+                  <p class="highlights">Arduino</p>
+
+                  <div class="row grid-center-v">
+                    <ion-icon
+                      class="time-icom"
+                      name="stopwatch-outline"
+                    ></ion-icon>
+                    <p>20-minute video</p>
+                  </div>
+                  <p class="blog-date">3 Years ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section slant-section" id="contact">
+        <div class="container">
+          <div class="row row-center">
+            <div class="contact">
+              <div
+                class="contact-image-box"
+                role="img"
+                aria-label="Obed on a discussion"
+              >
+                <div class="contact-details">
+                  <h2 class="contact-title">Reach out for Collaborations !</h2>
+                  <p>
+                    I welcome collaboration and am excited about the prospect of
+                    working together on innovative projects. <br />Whether it's
+                    a shared vision or a fresh idea, I'm open to exploring
+                    opportunities to combine our expertise and skills.
+                  </p>
+                  <ul class="contact-details-list">
+                    <li class="list-item">
+                      <ion-icon
+                        class="list-icon"
+                        name="logo-whatsapp"
+                      ></ion-icon>
+                      <span>+254 795983642</span>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon
+                        class="list-icon"
+                        name="mail-outline"
+                      ></ion-icon>
+                      <span>mogsobd@gmail.com</span>
+                    </li>
+                    <li class="list-item">
+                      <ion-icon
+                        class="list-icon"
+                        name="location-outline"
+                      ></ion-icon>
+                      <span>Nairobi, Kenya.</span>
+                    </li>
+                  </ul>
+                  <p>Fill out the details and I will reach out to you.</p>
+
+                  <div class="cta-social row flex-gap-tiny bottom-space-small">
+                    <a
+                      class="icon-link"
+                      href="https://www.linkedin.com/in/obed-mogaka-23477a6a/"
+                      ><ion-icon name="logo-linkedin"></ion-icon
+                    ></a>
+                    <a class="icon-link" href="https://github.com/mokweri"
+                      ><ion-icon name="logo-github"></ion-icon
+                    ></a>
+                    <a
+                      class="icon-link"
+                      href="https://www.youtube.com/@EmbedSystems"
+                      ><ion-icon name="logo-youtube"></ion-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form">
+                <form class="cta-form" action="#">
+                  <div>
+                    <label for="full-name">First Name</label>
+                    <input
+                      id="full-name"
+                      type="text"
+                      placeholder="John"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="full-name">Second Name</label>
+                    <input
+                      id="full-name"
+                      type="text"
+                      placeholder="Smith"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="full-name">Phone Number</label>
+                    <input
+                      id="phone-number"
+                      type="text"
+                      placeholder="+(code) xxxxxxx"
+                    />
+                  </div>
+                  <div>
+                    <label for="email">Email address</label>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="me@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="message-box">
+                    <label for="email">Message</label>
+                    <textarea
+                      id="message"
+                      type="text"
+                      rows="4"
+                      placeholder="How can we collaborate?"
+                    ></textarea>
+                  </div>
+                  <button class="btn btn--form">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-section">
+        <div class="container">
+          <div class="footer row flex-gap-small grid-center-v">
+            <a href="#"
+              ><img class="header-logo" src="img/obed-logo.png" alt="obed-logo"
+            /></a>
+            <!-- <h1 class="">OBED</h1> -->
+            <div class="col flex-gap-tiny">
+              <p class="copyright">
+                Copyright &copy; <span class="year">2023</span> by Obed, All
+                rights reserved.
+              </p>
+              <p class="copyright">
+                Designed with passion using HTML5 and CSS.
+              </p>
+            </div>
+            <div class="row flex-gap-small footer-links">
+              <a
+                class="icon-link"
+                href="https://www.linkedin.com/in/obed-mogaka-23477a6a/"
+                ><ion-icon name="logo-linkedin"></ion-icon
+              ></a>
+              <a
+                class="icon-link"
+                href="https://github.com/mokweri"
+                target="_blank"
+                ><ion-icon name="logo-github"></ion-icon
+              ></a>
+              <a
+                class="icon-link"
+                href="https://www.youtube.com/@EmbedSystems"
+                target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+  </body>
+</html>

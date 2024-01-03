@@ -1,0 +1,253 @@
+.academic-h1 {
+  font-family: "Libre Franklin", Arial, sans-serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #002f6c;
+  margin: 1rem 0 1rem 0;
+}
+.academic-h2 {
+  font-family: "Libre Franklin", Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #002f6c;
+  margin-bottom: 1rem;
+}
+.academic-icon {
+  color: #e57200;
+}
+/* *********************************************** */
+/* Academic header Section */
+/* ************************************************
+*/
+.academic-header {
+  position: relative;
+  background-image: url("../img/academic/academic-bg.jpg");
+  background-size: cover;
+  height: 40rem;
+  border-bottom: 5px solid #e57200;
+  /* align-items: end; */
+  padding-top: 8rem;
+}
+.academic-header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 46, 107, 0.8);
+}
+.academic-passport {
+  width: 24rem;
+  height: 24rem;
+  border-radius: 100%;
+}
+.academic-name {
+  font-family: "Libre Franklin", Arial, sans-serif;
+  color: #fff;
+  font-style: italic;
+}
+.academic-name h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.academic-name h2 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+/* *********************************************** */
+/* Academic Body Section */
+/* ************************************************
+*/
+.academic-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  gap: 3rem;
+  box-sizing: border-box;
+  padding: 8rem 0 6rem 0;
+}
+.academic-main {
+  min-width: 0;
+}
+/* .academic-body {
+  width: 100vw;
+  max-width: 100%;
+} */
+/* *********************************************** */
+/* Academic Aside  */
+/* ************************************************
+*/
+.aside-card {
+  border: 2px solid #e57200;
+  padding: 3rem;
+}
+.academic-left-aside {
+  display: flex;
+  flex-direction: column;
+}
+.contact-icon {
+  position: absolute;
+  left: 3%;
+  top: -8%;
+  font-size: 5.4rem;
+  color: #e57200;
+}
+.contact-container {
+  position: relative;
+  margin: 4rem 0 4rem;
+}
+.contact-name-dept {
+  font-family: "Libre Franklin", Arial, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.1;
+  font-style: italic;
+  color: #002f6c;
+  padding: 1.2rem 0 0.6rem;
+  border-top: 1px dotted #e57200;
+}
+.academic-address {
+  padding-bottom: 2rem;
+  border-bottom: 1px dotted #002f6c;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.academic-socials {
+  margin: 1.6rem 0 0 0;
+}
+/* icon links */
+
+.academic-icon-link:link,
+.academic-icon-link:visited {
+  text-decoration: none;
+  font-size: 3.2rem;
+  color: #0075db;
+  transition: all 0.3s;
+}
+.academic-icon-link:hover {
+  color: #e57200;
+  transform: scale(1.1);
+}
+
+/* *********************************************** */
+/* Main body  */
+/* ************************************************
+*/
+.academic-profile {
+  font-family: "Libre Franklin", Arial, sans-serif;
+  color: #222;
+  line-height: 1.5;
+  padding-bottom: 3.4rem;
+  border-bottom: 2px dotted #e57200;
+}
+.credentials {
+  padding-bottom: 0.625rem;
+  display: block;
+}
+.credentials span,
+.credentials time {
+  display: block;
+  font-size: 2rem;
+  line-height: 1.3;
+  color: #002f6c;
+  padding-bottom: 0.625rem;
+}
+.quote {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.quote object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+  width: 7rem;
+  height: 7rem;
+}
+.quote p {
+  color: #002f6c;
+  padding: 2.4rem 3rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+/* Links */
+.links {
+  border-top: 1px dotted #e57200;
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.link,
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #444;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3;
+  border: 0;
+
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #e57200;
+}
+/* Research Interests */
+.interests {
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #e57200;
+}
+.col-m {
+  width: 40rem;
+}
+.interests-header {
+  display: flex;
+  gap: 0.8rem;
+  padding: 2rem 0rem;
+  color: #002f6c;
+  font-size: 3.8rem;
+  align-items: center;
+}
+.items {
+  list-style: none;
+  font-family: "Libre Franklin", Arial, sans-serif;
+  color: #111;
+  line-height: 1.5;
+}
+.items-title {
+  padding: 1rem 0;
+}
+.items-title:not(:last-child) {
+  border-bottom: 1px dotted #0075db;
+}
+/* Publications */
+.items-title span {
+  display: block;
+}
+.authers {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #222;
+  padding: 0.8rem 0;
+}
+/* FOOTER Section */
+.last-footer {
+  padding: 4rem 0;
+  height: 8rem;
+  background-image: url(/img/academic/dash-pattern-10.png);
+  background-repeat: repeat;
+  font-size: 1.4rem;
+  color: #002f6c;
+}
+.year {
+  padding: 0 3px;
+}
