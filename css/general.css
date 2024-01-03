@@ -91,7 +91,8 @@ body {
 .icon-link:visited {
   text-decoration: none;
   font-size: 3.3rem;
-  color: #0075db;
+  /* color: #0075db; */
+  color: #fff;
   transition: all 0.3s;
 }
 .icon-link:hover {
@@ -200,7 +201,7 @@ img {
   outline: none;
   /* outline: 4px dotted #e67e22; */
   /* outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem #abb8c3;
+  box-shadow: 0 0 0 0.4rem #abb8c3;
 }
 
 /*

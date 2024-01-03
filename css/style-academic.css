@@ -17,6 +17,24 @@
 .academic-icon {
   color: #e57200;
 }
+/* BACK BUTTON */
+.back {
+  position: fixed;
+  z-index: 400;
+  top: 2rem;
+  right: 1rem;
+}
+.back-icon-link:link,
+.back-icon-link:visited {
+  text-decoration: none;
+  font-size: 3.4rem;
+  color: #e57200;
+  transition: all 0.3s;
+}
+.back-icon-link:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
 /* *********************************************** */
 /* Academic header Section */
 /* ************************************************

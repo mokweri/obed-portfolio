@@ -73,7 +73,7 @@
     margin-top: 0.8rem;
   }
   .quote p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.4;
   }
   .academic-h1 {
@@ -83,7 +83,7 @@
     font-size: 1.6rem;
   }
   .academic-left-aside {
-    width: 35rem;
+    width: 30rem;
     justify-self: center;
   }
 }

@@ -83,15 +83,18 @@
 /* Floating link */
 .floating-link {
   position: fixed;
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 1rem;
   margin: 0;
   right: 0;
-  top: 90%;
+  top: 85%;
   background-color: #e57200;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
   z-index: 400;
   transform: rotate(90deg);
   transform-origin: right top;
+}
+.academic-link {
+  padding: 1rem 0.6rem;
 }
 .academic-link:link,
 .academic-link:visited {
