@@ -37,7 +37,7 @@ allLinks.forEach(function (link) {
     } else if (href.startsWith("/")) {
       window.open(href, "_parent");
     } else {
-      // window.open(href, "_blank");
+      window.open(href, "_blank");
     }
 
     //other links
