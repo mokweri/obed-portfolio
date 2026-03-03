@@ -41,7 +41,7 @@
 */
 .academic-header {
   position: relative;
-  background-image: url("../img/academic/academic-bg.jpg");
+  background-image: url("/img/academic/academic-bg.jpg");
   background-size: cover;
   height: 40rem;
   border-bottom: 5px solid #e57200;

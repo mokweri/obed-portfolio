@@ -112,7 +112,7 @@
 /* ************************************************ */
 .profile-hero {
   /* background: #06205d; */
-  background-image: url("../img/back-embed.jpg");
+  background-image: url("/img/back-embed.jpg");
   background-size: cover;
   width: 100%;
   letter-spacing: 0.5px;
@@ -536,7 +536,7 @@ h1.hero-title::first-line {
       rgba(4, 24, 71, 0.8),
       rgba(12, 36, 94, 0.9)
     ),
-    url("../img/contact-obed.jpg");
+    url("/img/contact-obed.jpg");
   background-size: cover;
   background-position: center;
   transform: translate(-100px, -50px);
